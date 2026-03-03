@@ -169,4 +169,9 @@ class TemperatureConverterTest {
         // 测试极端高温: 500 K = 226.85°C
         assertEquals(226.85, converter.kelvinToCelsius(500), 0.001);
     }
+
+    @Test
+    void testMain() {
+        TemperatureConverter.main(new String[]{});
+    }
 }
