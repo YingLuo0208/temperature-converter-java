@@ -27,7 +27,13 @@ public class TemperatureConverter {
      * @return 如果是极端温度返回true，否则返回false
      */
     public boolean isExtremeTemperature(double celsius) {
-        return celsius < -40 || celsius > 50;
+        if (celsius < -40) {
+            return true;
+        }
+        if (celsius > 50) {
+            return true;
+        }
+        return false;
     }
 
     /**
